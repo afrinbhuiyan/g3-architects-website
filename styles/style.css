@@ -184,6 +184,23 @@ main>section {
     margin-bottom: 20px;
 }
 
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -140px;
+}
+
+.experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-architect img {
+    width: 100%;
+}
+
 /* Some facts related styles */
 
 .facts-container {
@@ -247,7 +264,9 @@ main>section {
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
-    .navbar {
+
+    .navbar,
+    .features {
         flex-direction: column;
     }
 
@@ -329,6 +348,18 @@ main>section {
         justify-items: center;
         gap: 50px;
     }
+
+    .features {
+        gap: 50px;
+        margin: 50px 20px;
+    }
+
+    #experience-badge {
+        margin-top: -50px;
+        margin-left: 15px;
+        padding: 35px 30px;
+        font-size: 1rem;
+    }
 }
 
 /* medium size device */
@@ -359,5 +390,16 @@ main>section {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         gap: 50px;
+    }
+
+    .features {
+        flex-direction: column;
+        margin: 50px 20px;
+        gap: 70px;
+    }
+
+    #experience-badge {
+        margin-top: -150px;
+        margin-left: 20px;
     }
 }
