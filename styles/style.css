@@ -151,6 +151,66 @@ main>section {
     font-weight: 500;
 }
 
+/* Some facts related styles */
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 155px;
+}
+
+.fact-card {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fact-number {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 5px 0 10px;
+}
+
+.fact-name {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+#fact-des {
+    max-width: 540px;
+}
+
+/* sponsor related styles */
+.our-sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sponsor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsors-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+}
+
+.sponsors-companies img{
+    filter: grayscale(100%) ;
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -175,35 +235,60 @@ main>section {
         padding: 15px 25px;
         font-size: 1rem;
     }
+
     .navbar {
         padding-top: 30px;
     }
+
     .banner-title {
         margin: 15px 0;
     }
+
     .banner-description {
         font-size: 15px;
     }
+
     main>section {
-        margin-top: 50px ;
+        margin-top: 50px;
     }
+
     .teams {
         flex-direction: column-reverse;
     }
-    .team-img-container {
-        grid-template-columns: repeat(1, 1fr);
+
+    .team-img-container, .facts-container, .sponsors-companies {
+        grid-template-columns: 1fr;
     }
+
     .our-features {
         margin-left: 20px;
         margin-top: 20px;
         margin-bottom: 40px;
     }
+
     .section-title {
         font-size: 2rem;
     }
+
     .section-description {
         font-size: 15px;
         margin: 20px 0 28px;
+    }
+    .facts-container {
+        gap: 10px;
+    }
+    .some-facts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .our-sponsors {
+        justify-content: center;
+    }
+    .sponsors-companies {
+        justify-items: center;
+        gap: 50px;
     }
 }
 
@@ -212,9 +297,25 @@ main>section {
     .teams {
         flex-direction: column-reverse;
     }
+
     .our-features {
         margin-left: 20px;
         text-align: center;
         margin-bottom: 40px;
+    }
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .some-facts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .sponsors-companies {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 50px;
     }
 }
