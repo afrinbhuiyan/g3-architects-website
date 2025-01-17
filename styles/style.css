@@ -4,10 +4,18 @@
     font-family: "Work Sans", serif;
 }
 
+* {
+    margin: 0;
+}
+
 
 /* shared styles */
 .display-flex {
     display: flex;
+}
+
+.text-primary {
+    color: #FF900E;
 }
 
 /* dark 02 */
@@ -43,6 +51,26 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.section-description {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 24px 0 32px;
+}
+
 /* header styles */
 
 /* navbar related styles */
@@ -50,6 +78,7 @@
 .navbar {
     justify-content: space-between;
     align-items: center;
+    padding-top: 63px;
 }
 
 .brand {
@@ -71,6 +100,7 @@
 .banner {
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 45px;
 }
 
 /* Banner Related styles */
@@ -85,6 +115,7 @@
 .banner-title {
     font-weight: 700;
     font-size: 4rem;
+    margin: 32px 0;
 }
 
 .banner-description {
@@ -97,6 +128,27 @@
 
 .banner-img {
     width: 100%;
+}
+
+/* team and feature related styles */
+
+.teams {
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+#quick-list {
+    font-weight: 500;
 }
 
 /* responsive media query */
@@ -116,10 +168,53 @@
 
     .nav-item {
         margin-right: 20px;
+        margin-top: 15px;
     }
 
     .btn-primary {
         padding: 15px 25px;
         font-size: 1rem;
+    }
+    .navbar {
+        padding-top: 30px;
+    }
+    .banner-title {
+        margin: 15px 0;
+    }
+    .banner-description {
+        font-size: 15px;
+    }
+    main>section {
+        margin-top: 50px ;
+    }
+    .teams {
+        flex-direction: column-reverse;
+    }
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .section-description {
+        font-size: 15px;
+        margin: 20px 0 28px;
+    }
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams {
+        flex-direction: column-reverse;
+    }
+    .our-features {
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 }
