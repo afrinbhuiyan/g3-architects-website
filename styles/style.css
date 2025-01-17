@@ -151,6 +151,39 @@ main>section {
     font-weight: 500;
 }
 
+/* features section related styles */
+
+.features {
+    gap: 146px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card .feature-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.feature-card .feature-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px #0000000f;
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+
 /* Some facts related styles */
 
 .facts-container {
@@ -207,8 +240,8 @@ main>section {
     width: 100%;
 }
 
-.sponsors-companies img{
-    filter: grayscale(100%) ;
+.sponsors-companies img {
+    filter: grayscale(100%);
 }
 
 /* responsive media query */
@@ -256,7 +289,9 @@ main>section {
         flex-direction: column-reverse;
     }
 
-    .team-img-container, .facts-container, .sponsors-companies {
+    .team-img-container,
+    .facts-container,
+    .sponsors-companies {
         grid-template-columns: 1fr;
     }
 
@@ -274,18 +309,22 @@ main>section {
         font-size: 15px;
         margin: 20px 0 28px;
     }
+
     .facts-container {
         gap: 10px;
     }
+
     .some-facts {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .our-sponsors {
         justify-content: center;
     }
+
     .sponsors-companies {
         justify-items: center;
         gap: 50px;
@@ -303,16 +342,19 @@ main>section {
         text-align: center;
         margin-bottom: 40px;
     }
+
     .facts-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
     }
+
     .some-facts {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .sponsors-companies {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
